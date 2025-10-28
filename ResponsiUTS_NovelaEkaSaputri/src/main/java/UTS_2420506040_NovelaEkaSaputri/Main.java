@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package UTS;
+package UTS_2420506040_NovelaEkaSaputri;
 
 /**
  *
@@ -15,20 +15,19 @@ public class Main {
         Produk snack = new Makanan("Snack", 15000, "2025-12-30");
 
         // Objek Pegawai
-        Pegawai budi = new PegawaiTetap("Novela", 5000000, 1000000);
-        Pegawai andi = new PegawaiKontrak("Ela", 3000000, 12);
-
-        // Output Produk
+        Pegawai Novela = new PegawaiTetap("Novela", 5000000, 1000000);
+        Pegawai Ela = new PegawaiKontrak("Ela", 3000000, 12);
+        
+        // Output Produk (polimorfisme)
         System.out.println("=== Output Produk ===");
         laptop.tampilkanInfo();
         System.out.println();
         snack.tampilkanInfo();
 
-        // Output Pegawai
+        // Output Pegawai (polimorfisme)
         System.out.println("\n=== Output Pegawai ===");
-        budi.tampilkanInfo();
+        Novela.tampilkanInfo();
         System.out.println();
-        andi.tampilkanInfo();
+        Ela.tampilkanInfo();
     }
 }
-
